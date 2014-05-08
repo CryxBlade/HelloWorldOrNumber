@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldOrNumber_Console", "HelloWorldOrNumber_Console\HelloWorldOrNumber_Console.csproj", "{7DEA56F0-30A4-4112-ACDA-5AB0309F254A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldOrNumber_Class", "HelloWorldOrNumber_Class\HelloWorldOrNumber_Class.csproj", "{15512782-C48D-41E6-BF0B-AC3905FED842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldOrNumber_Web", "HelloWorldOrNumber_Web\HelloWorldOrNumber_Web.csproj", "{976F731F-0242-443D-B6C1-CD608ED5539E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DEA56F0-30A4-4112-ACDA-5AB0309F254A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DEA56F0-30A4-4112-ACDA-5AB0309F254A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DEA56F0-30A4-4112-ACDA-5AB0309F254A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DEA56F0-30A4-4112-ACDA-5AB0309F254A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15512782-C48D-41E6-BF0B-AC3905FED842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15512782-C48D-41E6-BF0B-AC3905FED842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15512782-C48D-41E6-BF0B-AC3905FED842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15512782-C48D-41E6-BF0B-AC3905FED842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{976F731F-0242-443D-B6C1-CD608ED5539E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{976F731F-0242-443D-B6C1-CD608ED5539E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{976F731F-0242-443D-B6C1-CD608ED5539E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{976F731F-0242-443D-B6C1-CD608ED5539E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

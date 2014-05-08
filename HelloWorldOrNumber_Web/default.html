@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>window.JSON || document.write('<script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js">\x3C/script>')</script>
+    <!-- see: https://github.com/AjaxStack/AjaxStack -->
+    <script src="jqunback-1.51.min.js"></script>
+    <!--the ServiceStack.js file was used from the examples found here https://github.com/ServiceStack/ServiceStack.Examples/tree/master/src/ServiceStack.Examples-->
+    <script src="ServiceStack.js"></script>
+    <script type="text/javascript">
+
+        // This section was from the same example as the ServiceStack.js file. 
+        //This is not an ideal approach but helped get things working
+
+        //Get the hostName of this page
+        //Create a ClientGateway passing in the baseUrl where your services are hosted.
+        //Note: services not on the same domain require a crossdomain.xml policy
+        var gateway = new servicestack.ClientGateway('http://localhost:53394/');
+
+        $(function () {
+            //When the button is pressed it passes the value entered to the service method
+            $("#btnGetResult").click(function () {
+                gateway.getFromService({
+                    GetInputCheck: { ForValue: $("#txtGetResult").val() }
+                },
+                   function (e) {
+                       //displays the results as an alert and if the results div. 
+                       //At this stage the results are not showing. Was unable to make it work at this time.
+                       alert(e.Result);
+                       $("#serviceGetResult .result").html(e.Result);
+                   });
+            });
+        })
+
+    </script>
+</head>
+<body>
+
+    <div id="services" style="text-align: center">
+        <div id="serviceGetResult" class="service">
+            <div class="input">
+                <h3>Hellow World or Number checker</h3>
+                <label>For Number:</label>
+                <input class="int" type="text" id="txtGetResult" value="3" />
+                <button id="btnGetResult">Go</button>
+            </div>
+
+            <h4>Result</h4>
+            <div class="result"></div>
+        </div>
+    </div>
+</body>
+</html>
